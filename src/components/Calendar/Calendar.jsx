@@ -1,66 +1,52 @@
-import React, { useState } from 'react';
-import './Calendar.scss'; // Archivo de estilos para el calendario
+import React, { useState, useEffect } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import { useNavigate } from 'react-router-dom';
+import './Calendar.scss';
 
-const Calendar = () => {
+function CalendarView() {
   const [selectedDate, setSelectedDate] = useState(null);
+  const navigate = useNavigate();
 
-  // Lógica para seleccionar una fecha
   const handleDateClick = (date) => {
     setSelectedDate(date);
   };
 
-  // Lógica para obtener el mes actual y generar los días del calendario
-  const generateCalendarDays = () => {
-    const currentDate = new Date();
-    const currentMonth = currentDate.getMonth();
-    const currentYear = currentDate.getFullYear();
-
-    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-    const firstDayIndex = new Date(currentYear, currentMonth, 1).getDay();
-
-    const days = [];
-    for (let i = 1; i <= daysInMonth; i++) {
-      const date = new Date(currentYear, currentMonth, i);
-      const isSelected = selectedDate && date.toDateString() === selectedDate.toDateString();
-
-      days.push({ number: i, date, isSelected });
+  useEffect(() => {
+    if (selectedDate) {
+      navigate(`/calendarThree?date=${encodeURIComponent(selectedDate.toISOString())}`);
     }
-
-    // Rellena los días previos al primer día del mes
-    for (let i = 0; i < firstDayIndex; i++) {
-      const date = new Date(currentYear, currentMonth, -i);
-      days.unshift({ number: date.getDate(), date, isSelected: false });
-    }
-
-    // Rellena los días posteriores al último día del mes
-    const lastDayIndex = new Date(currentYear, currentMonth, daysInMonth).getDay();
-    for (let i = 1; i <= 6 - lastDayIndex; i++) {
-      const date = new Date(currentYear, currentMonth, daysInMonth + i);
-      days.push({ number: date.getDate(), date, isSelected: false });
-    }
-
-    return days.map((day) => (
-      <div
-        key={day.date}
-        className={`calendar-day${day.isSelected ? ' selected' : ''}`}
-        onClick={() => handleDateClick(day.date)}
-      >
-        {day.number}
-      </div>
-    ));
-  };
+  }, [selectedDate, navigate]);
 
   return (
-    <div className="calendar-container">
-      <div className="calendar-header">
-        <button>{'<'}</button>
-        <h2>Mayo 2023</h2>
-        <button>{'>'}</button>
+    <div className='app'>
+      <div className='calendar-container'>
+        <Calendar className='react-calendar' onChange={handleDateClick} value={selectedDate} />
       </div>
-      <div className="calendar-days">{generateCalendarDays()}</div>
+      {selectedDate && (
+        <p className='text-center'>
+          <span className='bold'>Selected date:</span> {selectedDate.toDateString()}
+        </p>
+      )}
     </div>
   );
-};
+}
 
-export default Calendar;
+export default CalendarView;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

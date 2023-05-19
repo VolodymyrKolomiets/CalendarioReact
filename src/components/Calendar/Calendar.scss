@@ -1,69 +1,144 @@
 @import "../../colors";
 
-@import "../../colors";
-
-.calendar-container {
+.react-calendar {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
+  background-color: #fff;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   margin: 0 auto;
-  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.react-calendar__navigation button {
+  color: #030303;
+  min-width: 48px;
+  height: 48px;
+  background: none;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color: #040404;
   border-radius: 8px;
-  background-color: var(--color-background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.calendar-header {
+.react-calendar__tile--now {
+  background: $greencalendar;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #010101;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: $greenfeend;
+  border-radius: 8px;
+  font-weight: bold;
+  color: $greenfeend;
+}
+
+.react-calendar__tile--active {
+  background: $greenfeend;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: $greenfeend;
+  color: white;
+}
+
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: $greenfeend;
+  border-radius: 0;
+}
+
+.react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: $greenfeend;
+  color: white;
+}
+
+.react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: $greenfeend;
+  color: white;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.react-calendar__month-view__days {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  background-color: var(--color-header-background);
-}
-
-.calendar-header h2 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.calendar-days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1px;
-  background-color: var(--color-days-background);
-}
-
-.calendar-day {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  font-size: 14px;
+  margin: 0 -8px;
 }
 
-.calendar-day.selected {
-  background-color: var(--color-selected-background);
-  color: var(--color-selected-text);
+.react-calendar__month-view__days__day {
+  flex: 0 0 calc(14.28% - 16px);
+  max-width: calc(14.28% - 16px);
+  padding: 12px;
+  font-size: 18px;
 }
 
-/* Estilos adicionales para el aspecto móvil */
-
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .react-calendar__month-view__days__day {
+    flex: 0 0 calc(20% - 16px);
+    max-width: calc(20% - 16px);
+  }
+  .react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #f8f8fa;
+  }
+  
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    background: #f8f8fa;
+  }
+  
+  .react-calendar__tile--rangeStart,
+  .react-calendar__tile--rangeEnd,
+  .react-calendar__tile--range {
+    position: relative;
+    z-index: 1;
+  }
+  
   .calendar-container {
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-
-  .calendar-header {
-    padding: 8px;
-  }
-
-  .calendar-header h2 {
-    font-size: 14px;
-  }
-
-  .calendar-day {
-    height: 36px;
-    font-size: 12px;
-  }
-}
+}  
