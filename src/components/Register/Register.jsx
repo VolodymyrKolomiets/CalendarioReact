@@ -38,7 +38,7 @@ const Register = () => {
     register(data)
     // limpia formulario
     setData(initialValue);
-    navigate("/");
+    navigate("/profile");
   }
 
   return (
@@ -78,7 +78,7 @@ const Register = () => {
               />
             </div>
             <div className="input-container">
-              <label htmlFor="password">Contraseña<a href=""></a></label>
+              <label htmlFor="password">Contraseña</label>
               <input
                 type="password"
                 onChange={handleInputChange}
@@ -87,11 +87,11 @@ const Register = () => {
               />
             </div>
             <div className="input-container">
-              <label htmlFor="password">Repetir Contraseña<a href=""></a></label>
+              <label htmlFor="repeat-password">Repetir Contraseña</label>
               <input
                 type="password"
                 onChange={handleInputChange}
-                name="password"
+                name="repeat-password"
                 value={data.password}
               />
             </div>
