@@ -19,7 +19,7 @@ function CalendarView() {
   }, [selectedDate, navigate]);
 
   return (
-    <div className='app'>
+    <div className='calendar'>
       <div className='calendar-container'>
         <Calendar className='react-calendar' onChange={handleDateClick} value={selectedDate} />
       </div>

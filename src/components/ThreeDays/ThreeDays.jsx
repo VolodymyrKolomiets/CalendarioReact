@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Calendar from '../../assets/icons/Calendar.png';
+import Dropdown from '../../assets/icons/Dropdown.png'
 
 const ThreeDays = () => {
   const timeSlots = [];
@@ -48,10 +50,33 @@ const ThreeDays = () => {
 
   return (
     <div className='calendar-container'>
+      <div className='calendar-header'>
+
+        <div className='calendar-header-left'>
+          <div className='div-icon-calendar'>
+            <img src={Calendar} alt="Register" className='icon-calendar' />
+          </div>
+          <div className='div-text-dropdown'>
+            <p className='text-calendar'>3 Dias</p>
+            <div className='div-icon-dropdown'>
+              <img src={Dropdown} alt="Register" className='icon-dropdown' />
+              <button onClick={handleGoBack}>Go Back to Calendar</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div className='calendar-header-right'>
+
+
+        </div>
+
+
+      </div>
+
       <div className='calendar-navigation'>
         <button onClick={handlePreviousDay}>&lt; Previous</button>
         <button onClick={handleNextDay}>Next &gt;</button>
-        <button onClick={handleGoBack}>Go Back to Calendar</button>
       </div>
       <div className='calendar-dates'>
         {/* Renderizar los tres días */}
