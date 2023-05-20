@@ -1,0 +1,79 @@
+@import "../../colors";
+
+.calendar-header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+    gap: 8px;
+    position: absolute;
+    width: 143px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+.div-icon-calendar {
+    width: 36px;
+    height: 36px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.icon-calendar {
+    position: absolute;
+    left: 9.38%;
+    right: 9.38%;
+    top: 9.38%;
+    bottom: 9.38%;
+    background: #02030E;
+}
+
+.div-text-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 75px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.text-calendar {
+    width: 47px;
+    height: 22px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.41px;
+    color: #02030E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.div-icon-dropdown {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.icon-dropdown {
+    position: absolute;
+    left: 15.62%;
+    right: 15.62%;
+    top: 31.25%;
+    bottom: 31.25%;
+    background: #02030E;
+}

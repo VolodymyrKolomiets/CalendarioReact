@@ -32,42 +32,42 @@ export const BookingProvider = ({ children }) => {
         }
     };
 
-    const updateBookingId = async (id, booking) => {
-        const token = JSON.parse(localStorage.getItem('token'));
-        try {
-            await axios.put(API_URL + 'bookings/updateBookingById/' + id, booking, {
-                headers: {
-                    authorization: token,
-                },
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const updateBookingId = async (id, booking) => {
+    //     const token = JSON.parse(localStorage.getItem('token'));
+    //     try {
+    //         await axios.put(API_URL + 'bookings/updateBookingById/' + id, booking, {
+    //             headers: {
+    //                 authorization: token,
+    //             },
+    //         });
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
-    const getAllBookings = async () => {
-        try {
-            const res = await axios.get(API_URL + 'bookings/getAllBookings');
-            dispatch({
-                type: 'GET_BOOKINGS',
-                payload: res.data,
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const getAllBookings = async () => {
+    //     try {
+    //         const res = await axios.get(API_URL + 'bookings/getAllBookings');
+    //         dispatch({
+    //             type: 'GET_BOOKINGS',
+    //             payload: res.data,
+    //         });
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
-    const getBookingId = async (id) => {
-        try {
-            const res = await axios.get(API_URL + 'bookings/getById/' + id);
-            dispatch({
-                type: 'GET_BOOKING_ID',
-                payload: res.data,
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const getBookingId = async (id) => {
+    //     try {
+    //         const res = await axios.get(API_URL + 'bookings/getById/' + id);
+    //         dispatch({
+    //             type: 'GET_BOOKING_ID',
+    //             payload: res.data,
+    //         });
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
     const deleteBooking = async (id) => {
         const token = JSON.parse(localStorage.getItem('token'));
@@ -95,9 +95,9 @@ export const BookingProvider = ({ children }) => {
                 bookings: state.bookings,
                 booking: state.booking,
                 addBooking,
-                updateBookingId,
-                getAllBookings,
-                getBookingId,
+                // updateBookingId,
+                // getAllBookings,
+                // getBookingId,
                 deleteBooking
 
             }}

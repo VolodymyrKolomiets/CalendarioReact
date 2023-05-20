@@ -86,17 +86,17 @@ export const EventProvider = ({ children }) => {
         }
     };
 
-    const getEventByName = async (input) => {
-        try {
-            const res = await axios.get(API_URL + 'events/getByName/' + input);
-            dispatch({
-                type: 'GET_EVENT_BY_NAME',
-                payload: res.data,
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    // const getEventByName = async (input) => {
+    //     try {
+    //         const res = await axios.get(API_URL + 'events/getByName/' + input);
+    //         dispatch({
+    //             type: 'GET_EVENT_BY_NAME',
+    //             payload: res.data,
+    //         });
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
 
 
 
@@ -110,7 +110,7 @@ export const EventProvider = ({ children }) => {
                 updateEventId,
                 getEventId,
                 getAllEvents,
-                getEventByName,
+                // getEventByName,
                 deleteEvent
 
             }}
