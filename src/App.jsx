@@ -9,6 +9,7 @@ import Calendar from './components/Calendar/Calendar';
 import Profile from './components/Profile/Profile';
 import DayHours from './components/SingleDayHours/SingleDayHours';
 import DayBookings from './components/SingleDayBooking/SingleDayBooking'
+import Home from './components/Home/Home';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <EventProvider>
             <BookingProvider>
               <Routes>
+                <Route path='/' element={<Home/>}/>
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
