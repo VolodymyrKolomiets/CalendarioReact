@@ -17,7 +17,7 @@
     align-items: center;
     max-width: 324px;
     width: 50%;
-    background: linear-gradient(rgb(127, 70, 233), 10%, rgba(0, 0, 0, 0.682));;
+    background:  $app-pricipal-color;
     border-radius: 10px;
     box-shadow: 13px 10px 5px 0px rgba(32, 34, 35, 0.948);
   }
@@ -34,17 +34,16 @@
   }
   
   .submit-btn {
-    background-color: #5934a8;
+    background-color: #9AD9CE;
     border-radius: 6px;
     color: black;
     padding: 10px 20px;
     border: none;
-    transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+    transition: 1s;
   }
   
   .submit-btn:hover {
     transform: scale(1.1);
-    background-color: #7521f2;
   }
   
   form {
@@ -98,4 +97,8 @@
     form {
       width: 70%;
     }
+  }
+
+  input {
+    width: 120px;
   }
