@@ -11,6 +11,7 @@ import Profile from './components/Profile/Profile';
 import DayHours from './components/SingleDayHours/SingleDayHours';
 import DayBookings from './components/SingleDayBooking/SingleDayBooking'
 import ThreeDays from "./components/ThreeDays/ThreeDays";
+import Request from "./components/Request/Request";
 
 
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/dayHours" element={<DayHours />} />
               <Route path="/dayBookings" element={<DayBookings />} />
               <Route path="/calendarThree" element={<ThreeDays />} />
+              <Route path="/request" element={<Request />} />
             </Routes>
           </BookingProvider>
         </EventProvider>
