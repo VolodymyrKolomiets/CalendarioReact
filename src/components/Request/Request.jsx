@@ -44,11 +44,7 @@ const Request = () => {
 
     return (
         <>
-            <div className="footer-principal-container">
-                <div className="footer-container">
-                <div className="footer-bar">footer</div>
-                </div>
-            </div>
+          
             <div className="principal-container">
                 <div className="secundary-container">
                     <div className="text-container">
@@ -62,7 +58,7 @@ const Request = () => {
                             <div className="clock"><ClockCircleFilled className="gris" /></div>
                         </div>
                         <div className="dropdown-text">
-                            <div>Martes , 12 Mayo</div>{/* un map. para sacar la info de los dias */}
+                            <div className="day-date">Martes , 12 Mayo</div>{/* un map. para sacar la info de los dias */}
                             {isDropdownOpen && (
                                 <div className="dropdown-content">
                                     <div className="user-container"> {/* un map. para sacar la informacion de la peticion "match" recibido */}
@@ -90,6 +86,7 @@ const Request = () => {
                     </div>
 
                 </div>
+                <div className='footer-div'>         <Footer />       </div>
             </div>
         </>
     );
