@@ -6,6 +6,7 @@ import Bell from '../../assets/icons/Bell.png';
 import Lens from '../../assets/icons/Lens.png';
 import moveright from '../../assets/icons/moveright.png';
 import moveleft from '../../assets/icons/moveleft.png';
+import IconAdd from '../../assets/icons/plus.png';
 import './ThreeDays.scss';
 import Footer from '../Footer/Footer';
 
@@ -67,18 +68,11 @@ const ThreeDays = () => {
     );
   };
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const handleGoBookings = () => {
+    navigate('/dayBookings');
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsExpanded(window.scrollY > 0);
-    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
 
@@ -111,7 +105,7 @@ const ThreeDays = () => {
 
 
 
-        <div className={`calendar-3day-complete ${isExpanded ? 'expanded' : ''}`}>
+        <div className={'calendar-3day-complete'}>
           <div className='calendar-body'>
             <div className='calendar-navigation'>
               <button onClick={handlePreviousDay} className='previous3day'>
@@ -141,22 +135,21 @@ const ThreeDays = () => {
           </div>
         </div>
 
-
       </div>
 
-      <div className='body-time'>
-        <div className='calendar-timeslots'>
-          {/* Renderizar los intervalos de tiempo */}
-          {timeSlots.map((timeSlot, index) => (
-            <div key={index} className='calendar-timeslot'>
-              {timeSlot}
-            </div>
-          ))}
-        </div>
+      <div className='calendar-timeslots'>
+        {/* Renderizar los intervalos de tiempo */}
+        {timeSlots.map((timeSlot, index) => (
+          <div key={index} className='calendar-timeslot'>
+            {timeSlot}
+          </div>
+        ))}
       </div>
 
+      <button onClick={handleGoBookings} className='image-button-add'>
+        <img src={IconAdd} alt='addBooking' className='button-addbooking' />
 
-
+      </button>
 
       <div className='footer-div'>
         <Footer />

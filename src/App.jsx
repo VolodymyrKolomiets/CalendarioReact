@@ -5,7 +5,6 @@ import { UserProvider } from "./context/UserContext/UserState";
 import { EventProvider } from './context/EventContext/EventState';
 import { BookingProvider } from './context/BookingContext/BookingState';
 import Register from './components/Register/Register';
-
 import Calendar from "./components/Calendar/Calendar";
 import Profile from './components/Profile/Profile';
 import DayHours from './components/SingleDayHours/SingleDayHours';

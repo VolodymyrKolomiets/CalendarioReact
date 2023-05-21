@@ -152,7 +152,7 @@
     height: 44px;
     left: 50%;
     transform: translateX(-50%);
-    top: 52px;
+    top: 51px;
     background: #F9F9F9;
 }
 
@@ -297,6 +297,8 @@
     }
 }
 
+
+
 .calendar-timeslots {
     display: flex;
     flex-direction: column;
@@ -319,7 +321,7 @@
     font-size: 12px !important;
     font-weight: bold;
     font-family: $font-family;
-    min-height: 76px !important;
+    min-height: 67px !important;
     width: 100% !important;
     display: flex;
     align-items: center;
@@ -335,4 +337,30 @@
     height: 80.2px;
     bottom: 0px;
     position: fixed;
+}
+
+.image-button-add {
+    position: fixed;
+    right: 30px;
+    top: 650px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 70px;
+    height: 70px;
+    background: #666666;
+    border-radius: 41px;
+    /* Otros estilos necesarios */
+}
+
+.button-addbooking {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+   
+
+
 }
