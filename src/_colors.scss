@@ -19,7 +19,13 @@ $greencalendar:  #00C2A2;
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 $font-family: 'Varela Round', sans-serif;
 
-
+.principal-div {
+    background: #F9F9F9;
+    width: 390px;
+    height: 55px;
+    top: -1px;
+    position: fixed;
+}
 
 
 
