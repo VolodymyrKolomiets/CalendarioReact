@@ -10,6 +10,7 @@ import './ThreeDays.scss';
 import Footer from '../Footer/Footer';
 
 const ThreeDays = () => {
+
   const timeSlots = [];
   let currentTime = new Date();
   currentTime.setHours(7, 0, 0, 0);
@@ -139,19 +140,30 @@ const ThreeDays = () => {
             </div>
           </div>
         </div>
+
+
       </div>
-      <div className='calendar-timeslots'>
-        {/* Renderizar los intervalos de tiempo */}
-        {timeSlots.map((timeSlot, index) => (
-          <div key={index} className='calendar-timeslot'>
-            {timeSlot}
-          </div>
-        ))}
+
+      <div className='body-time'>
+        <div className='calendar-timeslots'>
+          {/* Renderizar los intervalos de tiempo */}
+          {timeSlots.map((timeSlot, index) => (
+            <div key={index} className='calendar-timeslot'>
+              {timeSlot}
+            </div>
+          ))}
+        </div>
       </div>
+
+
+
+
       <div className='footer-div'>
         <Footer />
       </div>
     </div>
+
+
   );
 };
 
