@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useNavigate } from 'react-router-dom';
 import './Calendar.scss';
+import Footer from '../Footer/Footer';
 
 function CalendarView() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -28,6 +29,9 @@ function CalendarView() {
           <span className='bold'>Selected date:</span> {selectedDate.toDateString()}
         </p>
       )}
+      <div className='footer-div'>
+        <Footer/>
+      </div>
     </div>
   );
 }
