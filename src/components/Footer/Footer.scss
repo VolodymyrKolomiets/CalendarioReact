@@ -1,0 +1,183 @@
+@import '../../colors';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+
+    position: absolute;
+    width: 391px;
+    height: 92px;
+    left: -8px;
+    top: -8px;
+
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 32px 0px;
+    gap: 10px;
+    width: 375px;
+    height: 76px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.footer-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 7px;
+    width: 327px;
+    height: 47px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.home-element {
+    width: 57px;
+    height: 47px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.text-home {
+    position: relative;
+    top: 3px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    color: #02030E;
+}
+
+.matches-element {
+    width: 57px;
+    height: 47px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.img-matches {
+    position: relative;
+    top: 2px;
+}
+
+.text-matches {
+    position: relative;
+    top: 6px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    color: #02030E;
+}
+
+.chat-element {
+
+    width: 57px;
+    height: 43.5px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.text-chats {
+    position: relative;
+    top: 3px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    color: #02030E;
+}
+
+.calendar-container {
+    width: 57px;
+    height: 44px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.calendar-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.img-calendar {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: -2px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+//he tenido que poner cal y no calendar como el resto pq se ve que hay algo reservado con esa clase y no me leia el css o algo no se 
+.text-cal {
+    position: relative;
+    top: 3px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    color: #020e06;
+}
+
+.profile-element {
+    width: 57px;
+    height: 47px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+
+}
+
+.img-profile {
+    border-radius: 50.7608px;
+    width: 28px;
+    height: 28px;
+}
+
+.text-profile {
+    position: relative;
+    top: 3px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.16px;
+    color: #020e06;
+}

@@ -25,7 +25,7 @@ function App() {
         <EventProvider>
           <BookingProvider>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+              <Route path='/' element={<Home/>}/>
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login/>} />
