@@ -1,9 +1,215 @@
 @import "../../colors";
 
-.request-header {
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 374px;
+    height: 346px;
+    left: 0px;
+    top: 69px;
+}
+
+.secundary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 374px;
+    height: 42px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 24px 0px;
+    gap: 8px;
+    width: 374px;
+    height: 42px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.request-text {
     width: 137px;
     height: 34px;
     margin: 8px 0 0 24px;
     color: #22232B;
-    border-bottom:0.5px solid #000000;
+}
+
+.request-line {
+    width: 460px;
+    height: 0px;
+    border: 0.5px solid #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.principal-dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 390px;
+    height: 36px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+    margin-left: 24px;
+    width: 374px;
+    height: 36px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.clock-container {
+    height: 24px;
+    width: 24px;
+    left: 24px;
+    top: 6px;
+    border-radius: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    .clock {
+        height: 24px;
+        width: 24px;
+        padding: 4px;
+    }
+
+}
+
+.dropdown-text {
+    width: 113px;
+    height: 20px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #666666;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 32px;
+    width: 328px;
+    height: 64px;
+    background: #F9F9F9;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.user-container {
+    display: flex;
+    gap: 10px;
+}
+
+.avatar {
+    background: url(assets/icons/rachel.png);
+    border-radius: 65.9199px;
+}
+
+.titel-request {
+    width: 113px;
+    height: 26px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.07px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.description-request {
+    width: 120px;
+    height: 12px;
+    margin-top: 8px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.16px;
+    color: #828282;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.button-chat {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 4px 14px;
+    width: 100px;
+    height: 36px;
+    background: #F9F9F9;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.drop-arrow {
+
+    height: 7px;
+    width: 15px;
+    left: 196px;
+    border-radius: 0px;
+    padding-bottom: 8px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+
+.gris {
+    color: grey;
 }
