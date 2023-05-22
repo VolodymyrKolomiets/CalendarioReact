@@ -136,16 +136,16 @@ const ThreeDays = () => {
         </div>
 
       </div>
-
-      <div className='calendar-timeslots'>
-        {/* Renderizar los intervalos de tiempo */}
-        {timeSlots.map((timeSlot, index) => (
-          <div key={index} className='calendar-timeslot'>
-            {timeSlot}
-          </div>
-        ))}
+      <div className='calendar-hours'>
+        <div className='calendar-timeslots'>
+          {/* Renderizar los intervalos de tiempo */}
+          {timeSlots.map((timeSlot, index) => (
+            <div key={index} className='calendar-timeslot'>
+              {timeSlot}
+            </div>
+          ))}
+        </div>
       </div>
-
       <button onClick={handleGoBookings} className='image-button-add'>
         <img src={IconAdd} alt='addBooking' className='button-addbooking' />
 

@@ -24,11 +24,7 @@ function CalendarView() {
       <div className='calendar-container'>
         <Calendar className='react-calendar' onChange={handleDateClick} value={selectedDate} />
       </div>
-      {selectedDate && (
-        <p className='text-center'>
-          <span className='bold'>Selected date:</span> {selectedDate.toDateString()}
-        </p>
-      )}
+      
       <div className='footer-div'>
         <Footer/>
       </div>
