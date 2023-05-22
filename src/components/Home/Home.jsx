@@ -13,31 +13,31 @@ import patr6 from '../../assets/imgHomeComp/patrocinadoresycreadorapp/patr6.png'
 
 const Home = () => {
   return (
-    <div>
-      <div>{/* Empresa organizadora del evento */}
-        <img src={LogoEmpresaOrganizadora} alt="Logo de la empresa" />
+    <div className='home-container'>
+      <div className='logo-empresa-container'>{/* Empresa organizadora del evento */}
+        <img className='logoEmpresa' src={LogoEmpresaOrganizadora} alt="Logo de la empresa" />
       </div>
       <div>
-        <header>
-          <img src={FotoEmpresaOrganizadora} alt="Foto de la empresa" />
-          <p>Valencia 20 y 21 de octubre</p>
-          <p>Ciudad de las Artes y las Ciencias Av. del Professor López Piñero, 7, Valencia </p>
+        <header className='header'>
+          <img className='imgHeader' src={FotoEmpresaOrganizadora} alt="Foto de la empresa" />
+          <p className='fechaEvento'>Valencia 20 y 21 de octubre</p>
+          <p className='locEvento'>Ciudad de las Artes y las Ciencias Av. del Professor López Piñero, 7, Valencia </p>
         </header>
       </div>
       <div className='introEvent'>
-        <h2>Ftalks Food Summit 2023</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit eius, consequatur magni corrupti optio exercitationem. Enim, suscipit debitis? Praesentium consequatur vel reprehenderit! Modi voluptate quasi eveniet explicabo illum. Quo!</p>
+        <h2 className='titleIntro'>Ftalks Food Summit 2023</h2>
+        <p className='intro'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit eius, consequatur magni corrupti optio exercitationem. Enim, suscipit debitis? Praesentium consequatur vel reprehenderit! Modi voluptate quasi eveniet explicabo illum. Quo!</p>
       </div>
       <div className='conferencias'>
-        <p>Conferencias</p>
+        <p className='title-conf'>Conferencias</p>
         <div className='conferencias-container'>
           {/* Cuando creen eventos que es a lo que creo que se refiere agregrar aqui las conferencias y relacionar las conferencias con los ponentes necesito categoria del evento,fecha y hora con el getAllEvents*/}
-          <div className='conferencia-element'>
-            <div>
-              <p>
+          <div className='confer-element-container'>
+            <div className='confer-element'>
+              <p className='catConf'>
                 Innovación
               </p>
-              <hr />
+              <hr className='line-confer' />
               <div>
                 <p>Lunes 21 de octubre</p>
                 <div>
@@ -47,12 +47,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='conferencia-element'>
-            <div>
-              <p>
+          <div className='confer-element-container'>
+            <div  className='confer-element'>
+              <p className='catConf'>
                 Innovación
               </p>
-              <hr />
+              <hr className='line-confer' />
               <div>
                 <p>Lunes 21 de octubre </p>
                 <div>
@@ -62,10 +62,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='conferencia-element'>
-            <div>
-              <p>RSC</p>
-              <hr />
+          <div className='confer-element-container'>
+            <div  className='confer-element'>
+              <p className='catConf'>RSC</p>
+              <hr className='line-confer'/>
               <div>
                 <p>Lunes 21 de octubre</p>
                 <div>
@@ -77,48 +77,48 @@ const Home = () => {
           </div>
         </div>
         <div className='ponentes-container'>
-          <p>Ponentes</p>
-          <div className='ponentes-elements'>
-            <div>
-              <p>Salud y bienestar</p>
+          <p className='ponentes-title'>Ponentes</p>
+          <div className='ponentes-elements-container'>
+            <div className='ponente-element'>
+              <p className='headPonente'>Salud y bienestar</p>
               <div>
-                <img src={FotoEmpresaOrganizadora} alt="" />
+                <img className='imgPonente' src={FotoEmpresaOrganizadora} alt="" />
               </div>
-              <p> Nombre Apellido Cargo empresa </p>
+              <p className='datesPonente'> Nombre Apellido Cargo empresa </p>
 
             </div>
-            <div>
-              <p>Salud y bienestar</p>
+            <div className='ponente-element'>
+              <p  className='headPonente'>Salud y bienestar</p>
               <div>
-                <img src={FotoEmpresaOrganizadora} alt="" />
+                <img  className='imgPonente' src={FotoEmpresaOrganizadora} alt="" />
               </div>
-              <p> Nombre Apellido Cargo empresa </p>
+              <p  className='datesPonente'> Nombre Apellido Cargo empresa </p>
             </div>
-            <div>
-              <p>Salud y bienestar</p>
+            <div className='ponente-element'>
+              <p  className='headPonente'>Salud y bienestar</p>
               <div>
-                <img src={FotoEmpresaOrganizadora} alt="" />
+                <img className='imgPonente' src={FotoEmpresaOrganizadora} alt="" />
               </div>
-              <p> Nombre Apellido Cargo empresa </p>
+              <p  className='datesPonente'> Nombre Apellido Cargo empresa </p>
             </div>
           </div>
         </div>
-        <footer>
+        <footer className='footer-home'>
           {/* patrocinadores del evento en este caso ponemos ejemplos de figma */}
-          <div>
-            <img src={patr1} alt="" />
-            <img src={patr2} alt="" />
-            <img src={patr3} alt="" />
+          <div className='patr-block-1'>
+            <img className='ptr1' src={patr1} alt="" />
+            <img className='ptr2' src={patr2} alt="" />
+            <img className='ptr3' src={patr3} alt="" />
           </div>
-          <div>
-            <img src={patr4} alt="" />
-            <img src={patr5} alt="" />
-            <img src={patr6} alt="" />
+          <div className='patr-block-2'>
+            <img className='ptr4' src={patr4} alt="" />
+            <img className='ptr5' src={patr5} alt="" />
+            <img className='ptr6' src={patr6} alt="" />
             </div>
           {/* creador de la app */}
-          <div>
-           <p>Powered by</p>
-           <p>Feevents</p>
+          <div className='creadorDiv'>
+           <p className='hechoPor'>Powered by</p>
+           <p className='nombreCreador'>Feevents</p>
           </div>
         </footer>
       </div>
