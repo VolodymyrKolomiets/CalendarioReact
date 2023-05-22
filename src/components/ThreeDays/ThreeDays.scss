@@ -198,11 +198,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .number-day1,
 .number-day2,
 .number-day3 {
+    position: relative;
+    z-index: 1;
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
@@ -273,19 +276,19 @@
 
 .current-day {
     position: relative;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: -2%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 25px;
-        height: 25px;
-        background-color: $yellowcalendar;
-        border-radius: 50%;
-        z-index: -1;
-    }
+.current-day:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    top: -2%;    
+    border-radius: 50%;
+    background-color: #FBB900;
 }
 
 .calendar-hours {
@@ -331,10 +334,14 @@
     position: fixed;
 }
 
+.div-button-add {
+    position: absolute;
+    left: 290px;
+    top: 650px;
+}
+
 .image-button-add {
     position: fixed;
-    right: 30px;
-    top: 650px;
     z-index: 3;
     display: flex;
     flex-direction: row;

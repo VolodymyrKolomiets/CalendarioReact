@@ -1,1 +1,316 @@
 @import "../../colors";
+
+.calendar-container {
+    position: relative;
+}
+
+.principal-div {
+    background: #F9F9F9;
+    width: 390px;
+    height: 55px;
+    top: -1px;
+    position: fixed;
+}
+
+.single-day-booking-header {
+    position: fixed;
+    top: 50px;
+}
+
+.single-day-booking-header {
+    position: relative;
+    /* Cambiamos a posición relativa */
+    width: 390px;
+    height: 52px;
+    background: #F9F9F9;
+}
+
+.calendar-header-left14 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+    gap: 8px;
+    position: absolute;
+    width: 123px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.div-text-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    flex: 1;
+}
+
+.text-calendar14 {
+    width: 80px;
+    height: 22px;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.41px;
+    color: #02030E;
+}
+
+.icon-back-left {
+    width: 9px;
+    height: 15px;
+
+
+}
+
+.calendar-header-right14 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    gap: 9px;
+    position: absolute;
+    width: 81px;
+    height: 50px;
+    left: 294px;
+    top: -0.46px;
+}
+
+.single-day-booking-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    /* Cambiamos a posición relativa */
+    width: 100px;
+    margin-left: 165px;
+    top: 15px;
+
+
+}
+
+.previous14day,
+.Next14day {
+    flex: none;
+    margin-left: 0px;
+}
+
+.button-icon14 {
+    width: 10px;
+    height: 16px;
+    background: transparent;
+    /* Establecer el fondo como transparente */
+    border: none;
+    /* Eliminar el borde */
+    padding: 0;
+    /* Eliminar el relleno */
+    margin: 0;
+    /* Eliminar los márgenes */
+    appearance: none;
+    /* Deshabilitar los estilos de apariencia nativos */
+    -webkit-tap-highlight-color: transparent;
+    /* Eliminar el resaltado al tocar */
+    cursor: pointer;
+    /* Cambiar el cursor al estilo de puntero */
+    outline: none;
+    /* Eliminar el contorno al hacer clic */
+    touch-action: manipulation;
+    /* Mejorar la respuesta táctil */
+    margin-left: 0px;
+}
+
+.button-icon214 {
+    width: 10px;
+    height: 16px;
+    background: transparent;
+    /* Establecer el fondo como transparente */
+    border: none;
+    /* Eliminar el borde */
+    padding: 0;
+    /* Eliminar el relleno */
+    margin: 0;
+    /* Eliminar los márgenes */
+    appearance: none;
+    /* Deshabilitar los estilos de apariencia nativos */
+    -webkit-tap-highlight-color: transparent;
+    /* Eliminar el resaltado al tocar */
+    cursor: pointer;
+    /* Cambiar el cursor al estilo de puntero */
+    outline: none;
+    /* Eliminar el contorno al hacer clic */
+    touch-action: manipulation;
+    /* Mejorar la respuesta táctil */
+    margin-left: 0px;
+}
+
+// .div-icon-lens {
+//     width: 28px;
+//     height: 28px;
+//     flex: none;
+//     order: 0;
+//     flex-grow: 0;
+// }
+
+// .icon-lens {
+//     width: 22.75px;
+//     height: 22.75px;
+//     flex: none;
+//     order: 0;
+//     flex-grow: 0;
+// }
+
+// .div-icon-bell {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     padding: 3px;
+//     gap: 10px;
+//     width: 28px;
+//     height: 28px;
+//     flex: none;
+//     order: 1;
+//     flex-grow: 0;
+// }
+
+// .icon-bell {
+//     width: 22.46px;
+//     height: 22.75px;
+//     flex: none;
+//     order: 0;
+//     flex-grow: 0;
+// }
+
+
+.calendar-14day-complete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* Cambiamos a posición relativa */
+    width: 390px;
+    height: 44px;
+    background: #F9F9F9;
+    top: 50px;
+}
+
+.single-day-booking-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    height: 44px;
+    width: 390px;
+}
+
+.single-day-booking-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 86px;
+    margin-left: 10px;
+    width: 390px;
+}
+
+.calendar-dates14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+}
+
+.current-day14 {
+    position: relative;
+}
+
+.current-day14:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    top: -2%;    
+    border-radius: 50%;
+    background-color: #FBB900;
+}
+  
+
+.div-day1,
+.div-day2,
+.div-day3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.number-day1,
+.number-day2,
+.number-day3,
+.number-day4,
+.number-day5,
+.number-day6,
+.number-day7,
+.number-day8,
+.number-day9,
+.number-day10,
+.number-day11,
+.number-day12,
+.number-day13,
+.number-day14{
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: $font-family;
+    color: #02030E;
+    margin-bottom: -2px;
+    margin-top: -15px;
+}
+
+.day1-calendar,
+.day2-calendar,
+.day3-calendar {
+    font-family: $font-family;
+    font-size: 13px;
+    line-height: 19px;
+    color: #22232B;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+

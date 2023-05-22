@@ -69,7 +69,7 @@ const ThreeDays = () => {
   };
 
   const handleGoBookings = () => {
-    navigate('/dayBookings');
+    navigate('/SingleDayBooking');
   };
 
 
@@ -105,7 +105,7 @@ const ThreeDays = () => {
 
 
 
-        <div className={'calendar-3day-complete'}>
+        <div className='calendar-3day-complete'>
           <div className='calendar-body'>
             <div className='calendar-navigation'>
               <button onClick={handlePreviousDay} className='previous3day'>
@@ -146,10 +146,13 @@ const ThreeDays = () => {
           ))}
         </div>
       </div>
-      <button onClick={handleGoBookings} className='image-button-add'>
-        <img src={IconAdd} alt='addBooking' className='button-addbooking' />
 
-      </button>
+      <div className='div-button-add'>
+        <button onClick={handleGoBookings} className='image-button-add'>
+          <img src={IconAdd} alt='addBooking' className='button-addbooking' />
+        </button>
+      </div>
+
 
       <div className='footer-div'>
         <Footer />
