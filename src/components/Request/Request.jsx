@@ -3,6 +3,7 @@ import './Request.scss';
 import { DownOutlined, ClockCircleFilled } from '@ant-design/icons'
 import axios from 'axios';
 import rachel from "../../assets/icons/rachel.png"
+import Footer from "../Footer/Footer"
 
 const userPhoto = rachel;
 const eventName = 'Sesión fotográfica paramoda y editorial';
@@ -44,8 +45,9 @@ const Request = () => {
 
     return (
         <>
-          
+        <div>
             <div className="principal-container">
+          <div className='principal-div'></div>
                 <div className="secundary-container">
                     <div className="text-container">
                         <h1 className="request-text">Peticiones</h1>
@@ -87,6 +89,7 @@ const Request = () => {
 
                 </div>
                 <div className='footer-div'>         <Footer />       </div>
+            </div>
             </div>
         </>
     );
