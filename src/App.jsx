@@ -13,6 +13,7 @@ import Home from './components/Home/Home';
 import ThreeDays from "./components/ThreeDays/ThreeDays";
 import Request from "./components/Request/Request";
 import { Login } from "./components/Login/Login";
+import Meeting from "./components/Meeting/Meeting";
 
 
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/dayBookings" element={<DayBookings />} />
               <Route path="/calendarThree" element={<ThreeDays />} />
               <Route path="/request" element={<Request />} />
+              <Route path="/meeting" element={<Meeting />} />
             </Routes>
           </BookingProvider>
         </EventProvider>

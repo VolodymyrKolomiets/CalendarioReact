@@ -1,0 +1,266 @@
+@import "../../colors";
+
+.principal-container-meeting {
+    position: relative;
+    width: 390px;
+    height: 812px;
+    background: #F9F9F9;
+}
+
+.container-meeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 390px;
+    height: 221px;
+    left: 0px;
+    top: 120px;
+
+    .title-meeting-principal-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 374px;
+        height: 36px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        .title-meeting-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 24px 0px;
+            gap: 8px;
+            width: 374px;
+            height: 36px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            .titel-input {
+                border: none;
+                width: 148px;
+                height: 28px;
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: 0.35px;
+                color: #666666;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+        }
+    }
+
+    .meeting-line {
+        width: 390px;
+        height: 0px;
+        border: 0.5px solid #666666;
+        flex: none;
+        order: 4;
+        flex-grow: 0;
+    }
+
+    .description-meeting-principal-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 390px;
+        height: 37px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .description-icon {
+            margin-left: 8px;
+        }
+
+        .description-meeting-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 24px 4px;
+            gap: 8px;
+            width: 390px;
+            height: 37px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .description-input {
+            width: 82px;
+            height: 20px;
+            border: none;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: -0.24px;
+            color: #666666;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+    }
+
+    .date-meeting-principal-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 390px;
+        height: 36px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
+        .date-meeting-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 24px;
+            gap: 8px;
+            width: 374px;
+            height: 36px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            .meeting-date {
+                color: #666666;
+            }
+        }
+    }
+
+    .participants-meeting-principal-container {
+        width: 374px;
+        height: 36px;
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+
+        .participants-meeting-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 16px 4px;
+            gap: 8px;
+
+        }
+
+        .plus-icon-meeting {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            gap: 8px;
+            width: 28px;
+            height: 28px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            color: #666666;
+        }
+
+        .button-add-participants {
+            all: unset;
+            color: #666666;
+        }
+    }
+
+    .color-meeting-principal-container {
+        width: 374px;
+        height: 36px;
+        flex: none;
+        order: 5;
+        flex-grow: 0;
+
+        .color-meeting-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 16px 4px;
+            gap: 8px;
+
+            .text-color {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #666666;
+            }
+
+            .color-meeting {
+                width: 28px;
+                height: 28px;
+                border: none;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+        }
+    }
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 24px 0px;
+    gap: 147px;
+    position: absolute;
+    width: 390px;
+    height: 70px;
+    left: 0px;
+    top: 50px;
+
+    .button-cancel {
+        width: 72px;
+        height: 22px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.41px;
+        color: #02030E;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        all: unset;
+    }
+
+    .button-save {
+        width: 66px;
+        height: 22px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.41px;
+        color: #02030E;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        all: unset;
+    }
+}
