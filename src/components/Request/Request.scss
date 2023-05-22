@@ -1,128 +1,136 @@
 @import "../../colors";
 
-.principal-div {   
-      background: black;     
-      width: 390px;     
-      height: 55px;     
-      top: -1px;     
-      position: fixed; 
-    }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+.principal-div-request {   
+  background: black;     
+  width: 390px;     
+  height: 55px;     
+  top: -1px;     
+  position: fixed; 
+}
 
 .principal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-    position: absolute;
-    max-width: 375px;
-    height: 346px;
-    left: 0px;
-    top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  max-width: 390px;
+  height: calc(100% - 55px); /*ajuste de altura*/
+  left: 0px;
+  top: 55px;
+  overflow-y: auto; /*agregar barra de desplazamiento si es necesario*/
 }
 
 .secundary-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    width: 374px;
-    height: 42px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 390px;
+  height: 42px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 24px 0px;
-    gap: 8px;
-    width: 374px;
-    height: 64px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 24px 0px;
+  gap: 8px;
+  width: 390px;
+  height: 64px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .request-text {
-    font-family: $font-family;
-    width: 176px;
-    height: 34px;
-    margin: 8px 0 0 24px;
-    color: #22232B;
+  font-family: $font-family;
+  width: 176px;
+  height: 34px;
+  margin: 8px 0 0 24px;
+  color: #22232B;
 }
 
 .request-line {
-    width: 370px;
-    height: 0px;
-    border: 0.5px solid #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  width: 390px;
+  height: 0px;
+  border: 0.5px solid #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .principal-dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
 
-    width: 390px;
-    height: 36px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  width: 390px;
+  height: 36px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .dropdown-container {
-    display: flex;
-    align-items: center;
-    padding: 8px 24px;
-    gap: 8px;
-    margin-left: 24px;
-    margin-top: 8px;
-    width: 374px;
-    height: 36px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  margin-left: 24px;
+  margin-top: 8px;
+  width: 390px;
+  height: 36px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .clock-container {
+  height: 24px;
+  width: 24px;
+  left: 24px;
+  top: 6px;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  .clock {
     height: 24px;
     width: 24px;
-    left: 24px;
-    top: 6px;
-    border-radius: 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    .clock {
-        height: 24px;
-        width: 24px;
-        padding: 4px;
-    }
+    padding: 4px;
+  }
 
 }
 
 .dropdown-text {
-    width: 132px;
-    height: 20px;
-    font-family:$font-family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: -0.24px;
-    color: #666666;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  width: 132px;
+  height: 20px;
+  font-family:$font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0;
 }
 
 
@@ -133,7 +141,7 @@
     align-items: center;
     padding: 6px 12px;
     gap: 32px;
-    width: 308px;
+    width: 300px;
     height: 64px;
     background: #F9F9F9;
     border-radius: 8px;
@@ -223,5 +231,4 @@
 
 .day-date {
     font-family: $font-family;
-    width: auto;
 }

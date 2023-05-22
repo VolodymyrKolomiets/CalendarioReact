@@ -47,7 +47,7 @@ const Request = () => {
         <>
         <div>
             <div className="principal-container">
-          <div className='principal-div'></div>
+          <div className='principal-div-request'></div>
                 <div className="secundary-container">
                     <div className="text-container">
                         <h1 className="request-text">Peticiones</h1>
@@ -88,7 +88,7 @@ const Request = () => {
                     </div>
 
                 </div>
-                <div className='footer-div'>         <Footer />       </div>
+                <div className='footer-div'><Footer /></div>
             </div>
             </div>
         </>
