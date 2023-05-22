@@ -11,7 +11,7 @@ import { UserContext } from "../../context/UserContext/UserState";
 const Footer = () => {
   const { getUserInfo, token, user } = useContext(UserContext);
   const [imgPerfil, setImgPerfil] = useState(PerfilMenuSimulacion);
-
+//ajustarlo cuando tenga los datos de la base de datos
   useEffect(() => {
     if (token) {
       getUserInfo();
