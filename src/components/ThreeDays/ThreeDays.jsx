@@ -69,7 +69,7 @@ const ThreeDays = () => {
   };
 
   const handleGoBookings = () => {
-    navigate('/dayBookings');
+    navigate('/SingleDayBooking');
   };
 
 
@@ -105,7 +105,7 @@ const ThreeDays = () => {
 
 
 
-        <div className={'calendar-3day-complete'}>
+        <div className='calendar-3day-complete'>
           <div className='calendar-body'>
             <div className='calendar-navigation'>
               <button onClick={handlePreviousDay} className='previous3day'>
@@ -136,20 +136,23 @@ const ThreeDays = () => {
         </div>
 
       </div>
-
-      <div className='calendar-timeslots'>
-        {/* Renderizar los intervalos de tiempo */}
-        {timeSlots.map((timeSlot, index) => (
-          <div key={index} className='calendar-timeslot'>
-            {timeSlot}
-          </div>
-        ))}
+      <div className='calendar-hours'>
+        <div className='calendar-timeslots'>
+          {/* Renderizar los intervalos de tiempo */}
+          {timeSlots.map((timeSlot, index) => (
+            <div key={index} className='calendar-timeslot'>
+              {timeSlot}
+            </div>
+          ))}
+        </div>
       </div>
 
-      <button onClick={handleGoBookings} className='image-button-add'>
-        <img src={IconAdd} alt='addBooking' className='button-addbooking' />
+      <div className='div-button-add'>
+        <button onClick={handleGoBookings} className='image-button-add'>
+          <img src={IconAdd} alt='addBooking' className='button-addbooking' />
+        </button>
+      </div>
 
-      </button>
 
       <div className='footer-div'>
         <Footer />

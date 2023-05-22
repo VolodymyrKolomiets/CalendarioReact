@@ -8,7 +8,7 @@ import Register from './components/Register/Register';
 import Calendar from "./components/Calendar/Calendar";
 import Profile from './components/Profile/Profile';
 import DayHours from './components/SingleDayHours/SingleDayHours';
-import DayBookings from './components/SingleDayBooking/SingleDayBooking'
+import SingleDayBooking from './components/SingleDayBooking/SingleDayBooking'
 import Home from './components/Home/Home';
 import ThreeDays from "./components/ThreeDays/ThreeDays";
 import Request from "./components/Request/Request";
@@ -32,7 +32,7 @@ function App() {
               <Route path="/login" element={<Login/>} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/dayHours" element={<DayHours />} />
-              <Route path="/dayBookings" element={<DayBookings />} />
+              <Route path="/SingleDayBooking" element={<SingleDayBooking />} />
               <Route path="/calendarThree" element={<ThreeDays />} />
               <Route path="/request" element={<Request />} />
               <Route path="/meeting" element={<Meeting />} />
