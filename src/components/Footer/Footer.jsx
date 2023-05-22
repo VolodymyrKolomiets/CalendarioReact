@@ -25,7 +25,7 @@ const Footer = () => {
   }, [user]);
 
   return (
-    <div className='footer'>
+    <div className='footer-component'>
       <div className='footer-container'>
         <div className='footer-elements'>
           <div className='home-element'>
@@ -37,9 +37,9 @@ const Footer = () => {
           <div className='chat-element'>
             <Link to={'/chat'}><img className='img-chats' src={Chats} alt='Chats' /><p className='text-chats'>Chat</p></Link>
           </div>
-          <div className='calendar-container'>
-            <div className='calendar-element'>
-              <Link to={'/calendar'}><img className='img-calendar' src={Calendar} alt='Calendar' /><p className='text-cal'>Agenda</p></Link>
+          <div className='cal-container'>
+            <div className='cal-element'>
+              <Link to={'/calendar'}><img className='img-cal' src={Calendar} alt='Calendar' /><p className='text-cal'>Agenda</p></Link>
             </div>
           </div>
           <div className='profile-element'>

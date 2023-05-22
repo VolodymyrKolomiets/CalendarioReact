@@ -1,7 +1,8 @@
 import React, { useContext, useState,useEffect} from "react";
 import { UserContext } from "../../context/UserContext/UserState";
+import './Login.scss'
 export const Login= () => {
-  const {login,token} = useContext(UserContext)
+  const {login,token,user} = useContext(UserContext)
   const [data, setData] = useState({
 email: "",
 password: "",
@@ -23,11 +24,11 @@ const handleInputChange = (event) => {
   
   };
   useEffect(() => {
-    if (token) {
+    if (token ) {
       navigate("/");
       console.log('usuario conectado con exito');
     }else{
-      console.log('Ha habido un error al iniciar sesion');
+      console.log('Ha habido un error al iniciar sesion,intentalo de nuevo o registrate');
     }
   }, [token]);
   
@@ -38,25 +39,31 @@ const handleInputChange = (event) => {
     clearState();
     };
     return (
-      <div>
+      <div className="login-container" >
         
-        <form onSubmit={handleSubmit}>
-        <label htmlFor="password">Email:</label>
-          <input
-            type="email"
-            placeholder="email"
-            value={data.email} 
-            onChange={handleInputChange}
-            name="email"
-          />
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            placeholder="password"
-            value={data.password}
-            onChange={handleInputChange}
-            name="password"
-          />
+        <form onSubmit={handleSubmit} >
+        <div className="emailContainer">
+          <label className="emailText" htmlFor="password" >Email:</label>
+            <input
+              className="inpEmail"
+              type="email"
+              placeholder="email"
+              value={data.email}
+              onChange={handleInputChange}
+              name="email"
+            />
+        </div>
+          <div className="passwordContainer">
+            <label className="passwordText" htmlFor="password">Password:</label>
+            <input
+            className="inpPassword"
+              type="password"
+              placeholder="password"
+              value={data.password}
+              onChange={handleInputChange}
+              name="password"
+            />
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </div>
