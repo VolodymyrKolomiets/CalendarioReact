@@ -2,23 +2,20 @@
 
 .home-container {
 
-    width: 375px;
+    width: 390px;
     height: 1554px;
     background: #EFEFEF;
     overflow-y: scroll;
 }
 
 .logo-empresa-container {
-    width: 376px;
+    width: 390px;
     height: 112px;
-    position: relative;
-    width: 376px;
     height: 42px;
     background: #FFFFFF;
 }
 
 .logoEmpresa {
-    position: relative;
     width: 116.19px;
     height: 43px;
     left: -100px;
@@ -40,7 +37,7 @@
     height: 73.49px;
     left: 23.94px;
 
-    font-family: 'SF Pro Display';
+    font-family: $font-family;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -52,13 +49,10 @@
 }
 
 .locEvento {
-
-    position: relative;
     width: 197.47px;
     height: 57.38px;
     left: 152.59px;
-
-    font-family: 'SF Pro Text';
+    font-family: $font-family;
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -75,18 +69,14 @@
     align-items: flex-start;
     padding: 19px 0px 0px;
     gap: 16px;
-
-    position: relative;
-    width: 327px;
+    width: 3px;
     height: 238px;
-    left: 24px;
-    top: 50px;
 }
 
 .titleIntro {
     width: 327px;
     height: 93px;
-    font-family: 'SF Pro Display';
+    font-family: $font-family;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -118,12 +108,10 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 17px;
+    gap: 16px;
     width: 327px;
-    height: 147px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    height: 226px;
+    overflow-x: scroll;
     
 }
 
@@ -156,6 +144,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    
 }
 
 .catConf {
